@@ -8,6 +8,9 @@ body {
     font-size: 16px;
 }
 
+
+/* Header Styles */
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -54,6 +57,31 @@ body {
     background: deepskyblue;
 }
 
+
+/* Main (Home page) Styles */
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: /*#6D7993*/
+    #FFFDD0;
+}
+
+.hi {
+    font-size: 70px;
+}
+
+.ui-freelance {
+    background-color: deepskyblue;
+    border-radius: 5px;
+    font-size: 40px;
+}
+
+.intro-image {
+    background-color: transparent;
+}
+
 .about {
     font-family: 'Sahitya', serif;
 }
@@ -83,7 +111,8 @@ body {
         align-self: left;
         /* align the logo to the left side of 'flex-container' */
     }
-    .navigation {
+    .navigation,
+    .main-container {
         flex-direction: column;
     }
     .navigation a {
