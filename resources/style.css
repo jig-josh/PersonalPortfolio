@@ -82,8 +82,35 @@ body {
     background-color: transparent;
 }
 
+
+/* About Me */
+
 .about {
     font-family: 'Sahitya', serif;
+}
+
+
+/* My Skills List */
+
+.skill,
+.project {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-list,
+.project-list {
+    margin: 20px;
+    /* height: 225px;
+    width: 225px;*/
+}
+
+
+/*  Projects  */
+
+.project-list img {
+    width: 350px;
 }
 
 
