@@ -1,154 +1,185 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-family: 'Rozha One', serif;
-    font-size: 16px;
-}
-
-
-/* Header Styles */
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: /*deepskyblue*/
-    #96858F;
-}
-
-.logo {
-    margin: 0 0 0 .45em;
-}
-
-.logo a {
-    color: deepskyblue;
-    /*rgb(28, 24, 22);*/
-}
-
-.logo,
-.navigation {
-    list-style: none;
-    text-transform: uppercase;
-}
-
-.logo a,
-.navigation a {
-    text-decoration: none;
-    letter-spacing: .45rem;
-}
-
-.navigation {
-    display: flex;
-}
-
-.navigation a {
-    display: block;
-    padding: 1em;
-    color: white;
-    font-size: 24px;
-    font-family: 'Just Another Hand', cursive;
-    font-weight: bold;
-}
-
-.navigation a:hover {
-    background: deepskyblue;
-}
-
-
-/* Main (Home page) Styles */
-
-.main-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: /*#6D7993*/
-    #FFFDD0;
-}
-
-.hi {
-    font-size: 70px;
-}
-
-.ui-freelance {
-    background-color: deepskyblue;
-    border-radius: 5px;
-    font-size: 40px;
-}
-
-.intro-image {
-    background-color: transparent;
-}
-
-
-/* About Me */
-
-.about {
-    font-family: 'Sahitya', serif;
-}
-
-
-/* My Skills List */
-
-.skill,
-.project {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.skill-list,
-.project-list {
-    margin: 20px;
-    /* height: 225px;
+                    * {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    
+                    body {
+                        font-family: 'Rozha One', serif;
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                    
+                    h1 {}
+                    /* Header Styles */
+                    
+                    .header-container {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        background: /*deepskyblue*/
+                        #96858F;
+                    }
+                    
+                    .logo {
+                        margin: 0 0 0 .45em;
+                    }
+                    
+                    .logo a {
+                        color: deepskyblue;
+                        /*rgb(28, 24, 22);*/
+                    }
+                    
+                    .logo,
+                    .navigation {
+                        list-style: none;
+                        text-transform: uppercase;
+                    }
+                    
+                    .logo a,
+                    .navigation a {
+                        text-decoration: none;
+                        letter-spacing: .45rem;
+                    }
+                    
+                    .navigation {
+                        display: flex;
+                    }
+                    
+                    .navigation a {
+                        display: block;
+                        padding: 1em;
+                        color: white;
+                        font-size: 24px;
+                        font-family: 'Just Another Hand', cursive;
+                        font-weight: bold;
+                    }
+                    
+                    .navigation a:hover {
+                        background: deepskyblue;
+                    }
+                    /* Main (Home page) Styles */
+                    
+                    .main-container {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        background-color: /*#6D7993*/
+                        #FFFDD0;
+                    }
+                    
+                    .intro,
+                    .intro-image {
+                        margin-top: 150px;
+                        margin-bottom: 150px;
+                    }
+                    
+                    .hi {
+                        font-size: 70px;
+                    }
+                    
+                    .ui-freelance {
+                        background-color: deepskyblue;
+                        border-radius: 5px;
+                        font-size: 40px;
+                        margin-top: 70px;
+                    }
+                    /* About Me */
+                    
+                    .about {
+                        background-color: #dfc3c4;
+                        font-family: 'Sahitya', serif;
+                        font-size: 30px;
+                    }
+                    
+                    .about-me {
+                        padding-top: 50px;
+                        padding-bottom: 50px;
+                    }
+                    /* My Skills List */
+                    
+                    .skill {
+                        background-color: #FFFDD0;
+                    }
+                    
+                    .skill,
+                    .project {
+                        display: inline-flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+                    
+                    .skill-list,
+                    .project-list {
+                        margin: 20px;
+                        /* height: 225px;
     width: 225px;*/
-}
-
-
-/*  Projects  */
-
-.project-list img {
-    width: 350px;
-}
-
-
-/* *********** media queries *********** */
-
-@media all and (max-width: 990px) {
-    .header-container {
-        flex-direction: column;
-    }
-    .logo {
-        margin: 0;
-    }
-    .navigation {
-        width: 100%;
-        justify-content: space-around;
-    }
-}
-
-
-/* ****** ****** */
-
-@media all and (max-width: 600px) {
-    .logo {
-        margin: .25em 0;
-        align-self: left;
-        /* align the logo to the left side of 'flex-container' */
-    }
-    .navigation,
-    .main-container {
-        flex-direction: column;
-    }
-    .navigation a {
-        text-align: center;
-        padding: 10px;
-        border-top: 1px solid rgba(255, 255, 255, 0.3);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    }
-    .navigation li:last-of-type a {
-        border-bottom: none;
-    }
-}
+                    }
+                    /*  Projects  */
+                    
+                    .project-list img {
+                        width: 350px;
+                    }
+                    /*        Contact Details */
+                    
+                    .btn {
+                        background: #11cdd4;
+                        background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+                        background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+                        background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+                        background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+                        background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+                        -webkit-border-radius: 8;
+                        -moz-border-radius: 8;
+                        border-radius: 8px;
+                        font-family: 'Montserrat', sans-serif;
+                        color: #ffffff;
+                        font-size: 20px;
+                        padding: 10px 20px 10px 20px;
+                        text-decoration: none;
+                    }
+                    
+                    .btn:hover {
+                        background: #30e3cb;
+                        background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+                        background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+                        background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+                        background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+                        background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+                        text-decoration: none;
+                    }
+                    /* *********** media queries *********** */
+                    
+                    @media all and (max-width: 990px) {
+                        .header-container {
+                            flex-direction: column;
+                        }
+                        .logo {
+                            margin: 0;
+                        }
+                        .navigation {
+                            width: 100%;
+                            justify-content: space-around;
+                        }
+                    }
+                    /* ****** ****** */
+                    
+                    @media all and (max-width: 600px) {
+                        .logo {
+                            margin: .25em 0;
+                            align-self: left;
+                            /* align the logo to the left side of 'flex-container' */
+                        }
+                        .navigation,
+                        .main-container {
+                            flex-direction: column;
+                        }
+                        .navigation a {
+                            text-align: center;
+                            padding: 10px;
+                            border-top: 1px solid rgba(255, 255, 255, 0.3);
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                        }
+                        .navigation li:last-of-type a {
+                            border-bottom: none;
+                        }
+                    }
